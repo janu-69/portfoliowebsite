@@ -9,3 +9,11 @@ html {
 *{
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
+.glow-effect {
+  box-shadow: 0 0 10px rgba(236, 72, 153, 0.8), 0 0 20px rgba(236, 72, 153, 0.6);
+  transition: box-shadow 0.3s ease;
+}
+
+.glow-effect:hover {
+  box-shadow: 0 0 15px rgba(236, 72, 153, 1), 0 0 30px rgba(236, 72, 153, 0.8);
+}

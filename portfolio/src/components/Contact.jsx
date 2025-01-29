@@ -15,7 +15,9 @@ const Contact = () => {
         </div>
         <div className="flex justify-center items-center mt-8">
         <a href={resume} download="AnilResume.pdf">
-                    <button className="bg-pink-400 rounded-md px-2">Download Resume</button>
+        <button className="bg-pink-400 rounded-md px-2 py-1 before:bg-pink-700 after:bg-pink-800 glow-effect hover:glow-effect">
+  Download Resume
+</button>
                   </a>
         </div>
         <div className="flex justify-center items-center mt-8 space-x-4">
