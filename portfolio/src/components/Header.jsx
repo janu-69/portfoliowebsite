@@ -14,7 +14,8 @@ const Header = () => {
 
   return (
     <>
-      <div id="list" className={`h-screen w-full bg-pink-200 text-center max-2xl:hidden p-10 absolute z-20 transition-all duration-300 ease-in-out ${isSidebarOpen ? 'max-2xl:hidden block' : 'hidden'}`} ref={(el) => {if (el && isSidebarOpen) {el.scrollIntoView({ behavior: 'smooth' });}}}>
+      <div id="list" className={`h-screen w-full bg-pink-200 text-center p-10 absolute z-20 transition-all duration-300 ease-in-out ${isSidebarOpen ? 'block' : 'hidden'}`} ref={(el) => {if (el && isSidebarOpen) {el.scrollIntoView({ behavior: 'smooth' });}}}
+      >
         <a href="#about" onClick={closeSidebar}><h1 className="mt-5 text-2xl font-bold">About Me</h1></a>
         <a href="#technology" onClick={closeSidebar}><h1 className="mt-5 text-2xl font-bold">Technologies</h1></a>
         <a href="#projects" onClick={closeSidebar}><h1 className="mt-5 text-2xl font-bold">My Work</h1></a>
@@ -27,6 +28,7 @@ const Header = () => {
         </h1>
       </div>
 
+      {/* Header */}
       <div id="header" className="flex p-10 justify-between text-xl max-sm:text-base max-sm:p-5 font-semibold">
         <h1 className="text-pink-700 cursor-pointer">ANIL.</h1>
 
